@@ -1,1 +1,12 @@
+nextjs.org
+requirements:
+Node.js 14.6.0 or newer
+MacOS, Windows (including WSL), and Linux are supported
 
+CREATE PROJECT.
+
+terminal:
+- npx create-next-app@latest
+or
+- npx create-next-app@latest --typescript
+for typescript project
