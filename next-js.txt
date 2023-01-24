@@ -10,3 +10,25 @@ terminal:
 or
 - npx create-next-app@latest --typescript
 for typescript project
+
+START PROJECT.
+
+- npm run dev
+- http://localhost:3000 to see your application
+- edit "pages/index.js" to see updated result in browser
+
+
+PAGES.
+
+Next.js page is a React Component exported from a (*.js|*.jsx|*.ts|*.tsx) file in the "pages" directory. Each page is associated with a route based on its file name.
+
+Example: File from "pages/about.js" with exported React component will be accessible at "/about" endpoint.
+
+If the page does not need to fetch any external data to be pre-rendered, Next.js generates a single HTML file per page during build time.
+
+Example:
+function About() {
+  return <div>About</div>
+}
+export default About
+
