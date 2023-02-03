@@ -32,3 +32,37 @@ function About() {
 }
 export default About
 
+Pages with Dynamic Routes.
+Create a file called pages/posts/[id].js, then it will be accessible at posts/1, posts/2, etc.
+
+hydration - process of converting static markup into dynamic React/nextjs components.
+
+getStaticProps - function that fetches data at build time.
+
+getStaticPaths - function that tells Next.js which pages need to be pre-rendered.
+
+getServerSideProps - function that fetches data on each request.
+
+getInitialProps - function that fetches data on each request.
+
+
+Two forms of Pre-rendering.
+
+Static Generation - The HTML is generated at build time and will be reused on each request.
+
+Server-side Rendering - The HTML is generated on each request.
+
+Static Generation with and without Data.
+
+Static Generation with Data using getStaticProps.
+
+Your page content depends on external data: Use getStaticProps.
+
+Static Generation without Data using getStaticProps.
+
+Server-side Rendering with Data using getServerSideProps.
+
+Server-side Rendering without Data using getServerSideProps.
+
+getStaticProps and getServerSideProps can only be exported from a page. You can’t export it from non-page files.
+
